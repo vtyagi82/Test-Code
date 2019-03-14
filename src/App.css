@@ -1,33 +1,220 @@
-.App {
-  text-align: center;
+html, body {
+    margin:0; padding:0
+} 
+
+body {
+    background: #efefef
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.p-fix {
+    position:fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p-rel {
+    position: relative
 }
 
-.App-link {
-  color: #61dafb;
+.p-abs {
+    position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.f-lft {
+    float: left
 }
+
+.f-rht {
+    float: right
+}
+
+.wrapper {
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+.w-100 {
+    width:100%
+}
+
+.h-100 {
+    height: 100%
+}
+
+.lft-pnl {
+    width:20%;
+    background: #04467e;
+    background: -moz-linear-gradient(left, #04467e 0%, #04385e 70%, #042a3e 100%); 
+    background: -webkit-linear-gradient(left, #04467e 0%,#04385e 70%,#042a3e 100%); 
+    background: linear-gradient(to right, #04467e 0%,#04385e 70%,#042a3e 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04467e', endColorstr='#042a3e',GradientType=1 );
+    color: #ececec;
+}
+
+.rht-pnl {
+    width: calc(100% - 22%);
+    left: 22%;
+    background: #eee;
+    position: relative;
+}
+
+.logo {
+    background: url(../src/assests/scala-logo.png) no-repeat;
+    margin: 20px 20px;
+    max-height:60px;
+    background-size: contain;
+}
+
+.sub-logo {
+    background: url(../src/assests/Skymet-Weather-Logo.png) no-repeat;
+    margin: 20px 20px 40px;
+    max-height:60px;
+    background-size: contain;
+    width:100%
+}
+
+ul.side-nav-wrapper {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 0 10px 10px;
+    margin-left: 5px;
+    margin-right:5px;
+    border-radius: 4px;
+    -webkit-transition: background .15s ease-in;
+    -o-transition: background .15s ease-in;
+    transition: background .15s ease-in;
+    color:#fff;
+    text-decoration: none;
+    display:block;
+}
+
+a.nav-link:hover {
+    background: #0092cc;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-link:hover .icn-clr {
+    color:#04467e;;
+}
+
+a.nav-link.active {
+    background:#005295
+}
+
+a.nav-link .icn-clr {
+    position:relative;
+    top:-3px;
+}
+
+.side-nav-ftr {
+    position:absolute;
+    bottom:0
+}
+
+.copyright {
+    padding:20px;
+    font-size:90%
+}
+
+.usr-info-wrpr {
+    text-align: right;
+    margin: 19px 30px;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.bx-shdow {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); 
+}
+
+.p-10{
+    padding:10px;
+}
+
+.m-r-5 {
+    margin-right:5px;
+}
+
+.m-r-15 {
+    margin-right:15px;
+}
+
+.m-r-30 {
+    margin-right:20px;
+}
+
+.card {
+    background:#fff;
+    margin-bottom:15px;
+}
+
+table input[type="checkbox"] {
+    color: #0092cc;
+}
+
+.innerWrapper {
+    width:100%;
+    padding-right:30px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding-left:0
+}
+
+.btn {
+    padding:0;
+    color:#333
+}
+
+.btn .icn-clr, a .icn-clr, table .icn-clr-fldr {
+    color:#0092cc;;
+}
+
+table .icn-clr-fldr {
+    font-size:110%;
+    position:relative;
+    top:3px;
+}
+
+.dropdown button {
+    background:transparent;
+    border:0;
+    padding:10px;
+}
+
+.w-200 {
+    width:200px;
+}
+
+div.custom-input {
+    margin-top:0;
+    float:right
+}
+
+div.custom-input label[class*="MuiInputLabel-formControl-"] {
+    top: -18px;
+}
+
+div.custom-input label + div[class*="MuiInput-formControl-"] {
+    margin-top:0
+}
+
+.dropdown .btn-primary:hover {
+    background-color: #0092cc;
+    border-color: #0092cc;
+}
+
+
+td span[class*="MuiCheckbox-checked-"]{
+    color: #0092cc !important
+}
+
+
+
